@@ -32,7 +32,7 @@ get_header(); ?>
 				endif;
 
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			//while ( have_posts() ) : the_post();
 
 			/*
 				* Include the Post-Format-specific template for the content.
@@ -41,17 +41,17 @@ get_header(); ?>
 				*/
 			get_template_part( 'template-parts/content-front', get_post_format() );
 
-		endwhile;
+		//endwhile;
 
-		the_posts_navigation();
+		//the_posts_navigation();
 
-	else :
+	//else :
 
-		get_template_part( 'template-parts/content', 'none' );
+		//get_template_part( 'template-parts/content', 'none' );
 
-	endif; ?>
+		endif; ?>
 
-	</div>
+</div>
 
 	</main><!-- #primary -->
 

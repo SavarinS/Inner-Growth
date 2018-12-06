@@ -30,3 +30,18 @@ function gutenbergtheme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'gutenbergtheme_pingback_header' );
+
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+
+
+function the_excerpt_more_link( $excerpt ){
+    $post = get_post();
+    $excerpt .= '... <a href="'. get_permalink($post->ID) . '">Read more</a>.';
+    return $excerpt;
+}
+add_filter( 'the_excerpt', 'the_excerpt_more_link', 21 );
