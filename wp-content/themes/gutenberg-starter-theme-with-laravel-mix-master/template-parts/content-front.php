@@ -40,14 +40,54 @@
 
 			<!-- Private and Business button section -->
 			<section class="services">
+
 				<div class="row">
+					<!-- for private sector -->
 					<div class="private col">
-						<h2>For yourself</h2>
+						<?php
+							$post_id = 119;
+							$queried_post = get_post($post_id);
+							$title = $queried_post->post_title;
+							$link = get_permalink($post_id);
+							$feature_image = get_the_post_thumbnail($post_id, 'large');
+							$exceprt = get_the_excerpt($post_id);
+						?>
+
+							<div class="feature-image">
+								<?php echo $feature_image; ?>
+							</div>
+							<div class="title-offer">
+								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
+							</div>
+
+							<div class="excerpt">
+								<?php echo  $exceprt; ?>
+							</div>
+							
 						<button type="button" class="btn btn-success">Private</button>
 					
 					</div>
+
+					<!-- for business sector -->
 					<div class="business col">
-						<h2>For your company</h2>
+					<?php
+							$post_id = 128;
+							$queried_post = get_post($post_id);
+							$title = $queried_post->post_title;
+							$link = get_permalink($post_id);
+							$feature_image = get_the_post_thumbnail($post_id, 'large');
+							$exceprt = get_the_excerpt($post_id);
+						?>
+							<div class="feature-image">
+								<?php echo $feature_image; ?>
+							</div>
+							<div class="title-offer">
+								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
+							</div>
+
+							<div class="excerpt">
+								<?php echo  $exceprt; ?>
+							</div>
 						<button type="button" class="btn btn-success">Business</button>
 					
 					</div>
