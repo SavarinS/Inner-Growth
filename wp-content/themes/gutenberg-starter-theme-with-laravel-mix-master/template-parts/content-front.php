@@ -18,100 +18,122 @@
 	
 		<div class="entry-content">
 
-		<!-- Introduction section -->
-		<section class="introduction">
-				
+			<!-- Introduction section -->
+			<section class="introduction">
+					
 
-				<!-- get Welcome post -->
-				<?php
-					$post_id = 134;
-					// $excerpt = the_excerpt();
-					$feature_image = get_the_post_thumbnail($post_id, 'medium');
-					$queried_post = get_post($post_id);
-					$title = $queried_post->post_title;
-				?>
-				
-					<h1 class="center"><?php  echo $title;?></h1>
-					<?php echo $feature_image; ?> 
-					<?php //echo $excerpt; ?>
-					<p><?php  echo $queried_post->post_content;?></p>
-				
-		</section>	
-
-		<!-- Private and Business button section -->
-		<section class="services">
-			<div class="row">
-				<div class="private col">
-					<h2>For yourself</h2>
-					<button type="button" class="btn btn-success">Private</button>
-				
-				</div>
-				<div class="business col">
-					<h2>For your company</h2>
-					<button type="button" class="btn btn-success">Business</button>
-				
-				</div>
-			
-			
-			
-			</div>
-		</section>
-
-		<!-- Offer section -->
-		<section class="offers">
-			<div class="row">
-				<div class="col-sm">
-					<!-- mindfulness -->
+					<!-- get Welcome post -->
 					<?php
-						$post_id = 113;
+						$post_id = 134;
+						// $excerpt = the_excerpt();
+						$feature_image = get_the_post_thumbnail($post_id, 'medium');
 						$queried_post = get_post($post_id);
 						$title = $queried_post->post_title;
-						$link = get_permalink($post_id);
 					?>
+					
+						<h1 class="center"><?php  echo $title;?></h1>
+						<?php echo $feature_image; ?> 
+						<?php //echo $excerpt; ?>
+						<p><?php  echo $queried_post->post_content;?></p>
+					
+			</section>	
 
-					<h3><?php  echo $title;?></h3>
-					<p><?php  //echo $queried_post->post_content;?></p>
-					<a href="<?php echo $link; ?>" <?php echo $title; ?></a>
+			<!-- Private and Business button section -->
+			<section class="services">
+				<div class="row">
+					<div class="private col">
+						<h2>For yourself</h2>
+						<button type="button" class="btn btn-success">Private</button>
+					
+					</div>
+					<div class="business col">
+						<h2>For your company</h2>
+						<button type="button" class="btn btn-success">Business</button>
+					
+					</div>
+				
+				
 				
 				</div>
+			</section>
 
-				<div class="col-sm">
-					<!-- Zen coaching -->
-					<?php
-						$post_id = 107;
-						$queried_post = get_post($post_id);
-						$title = $queried_post->post_title;
-						$link = get_permalink($post_id);
-					?>
-
-					<h3><?php  echo $title;?></h3>
-					<p><?php  //echo $queried_post->post_content;?></p>
-					<a href="<?php echo $link; ?>" <?php echo $title; ?></a>
-				
-				</div>
-
-				<div class="col-sm">
-				<!-- workshops -->
+			<!-- Offer section -->
+			<section class="offers">
+				<div class="row">
+					<div class="col">
+						<!-- mindfulness -->
 						<?php
-							$post_id = 8;
+							$post_id = 142;
 							$queried_post = get_post($post_id);
 							$title = $queried_post->post_title;
 							$link = get_permalink($post_id);
-							
+							$feature_image = get_the_post_thumbnail($post_id, 'medium');
+						?>
+							<div class="feature-image">
+								<?php echo $feature_image; ?>
+							</div>
+							<div class="title-offer">
+								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
+							</div>
+							<div class="content-offer">
+								<p><?php  echo $queried_post->post_content;?></p>
+							</div>
+						
+					
+					</div>
+
+					<div class="col">
+						<!-- Zen coaching -->
+						<?php
+							$post_id = 145;
+							$queried_post = get_post($post_id);
+							$title = $queried_post->post_title;
+							$link = get_permalink($post_id);
+							$feature_image = get_the_post_thumbnail($post_id, 'medium');
 						?>
 
-						<h3><?php  echo $title;?></h3>
-						<p><?php  //echo $queried_post->post_content;?></p>
-						<a href="<?php echo $link; ?>" <?php echo $title; ?></a>
+							<div class="feature-image">
+								<?php echo $feature_image; ?>
+							</div>
+							<div class="title-offer">
+								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
+							</div>
+							<div class="content-offer">
+								<p><?php  echo $queried_post->post_content;?></p>
+							</div>
+						
+					
+					</div>
+
+					<div class="col">
+					<!-- workshops -->
+							<?php
+								$post_id = 148;
+								$queried_post = get_post($post_id);
+								$title = $queried_post->post_title;
+								$link = get_permalink($post_id);
+								$feature_image = get_the_post_thumbnail($post_id, 'medium');
+							?>
+
+							<div class="feature-image">
+								<?php echo $feature_image; ?>
+							</div>
+							<div class="title-offer">
+								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
+							</div>
+							<div class="content-offer">
+								<p><?php  echo $queried_post->post_content;?></p>
+							</div>
+							
+					
+					</div>
 				
-				</div>
-			
-			
-			
-			
-			</div>
-	
-		</section>
+				
+				
+				
+				</div><!-- .row -->
+		
+			</section> <!--.offer -->
 
 		</div><!-- .entry-content -->
 
