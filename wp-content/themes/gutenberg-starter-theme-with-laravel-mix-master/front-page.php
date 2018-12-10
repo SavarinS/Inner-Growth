@@ -17,8 +17,16 @@ get_header(); ?>
 <h1>From front-page.php</h1>
 
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 	<div class="container">
+
+	<aside>
+	<?php
+		if (dynamic_sidebar('home_right_1')) {
+			dynamic_sidebar('home_right_1');
+		}
+	?>
+</aside>
 
 		<?php
 			if ( have_posts() ) :
@@ -51,9 +59,17 @@ get_header(); ?>
 
 		endif; ?>
 
-</div>
+	</div>
 
-	</main><!-- #primary -->
+</main><!-- #primary -->
+
+<aside>
+	<?php
+		if (dynamic_sidebar('home_right_1')) {
+			dynamic_sidebar('home_right_1');
+		}
+	?>
+</aside>
 
 <?php
 get_footer();
