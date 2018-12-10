@@ -130,6 +130,7 @@
 							$title = $queried_post->post_title;
 							$link = get_permalink($post_id);
 							$feature_image = get_the_post_thumbnail($post_id, 'medium');
+							$excerpt = get_the_excerpt($post_id);
 						?>
 
 							<div class="feature-image">
@@ -139,7 +140,7 @@
 								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
 							</div>
 							<div class="content-offer">
-								<p><?php  echo $queried_post->post_content;?></p>
+							<p><?php  echo $excerpt;?></p>
 							</div>
 						
 					
@@ -153,6 +154,7 @@
 								$title = $queried_post->post_title;
 								$link = get_permalink($post_id);
 								$feature_image = get_the_post_thumbnail($post_id, 'medium');
+								$excerpt = get_the_excerpt($post_id);
 							?>
 
 							<div class="feature-image">
@@ -162,7 +164,7 @@
 								<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
 							</div>
 							<div class="content-offer">
-								<p><?php  echo $queried_post->post_content;?></p>
+								<p><?php  echo $excerpt;?></p>
 							</div>
 							
 					

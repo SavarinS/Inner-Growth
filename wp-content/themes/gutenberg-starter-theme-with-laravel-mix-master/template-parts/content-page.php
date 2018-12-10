@@ -15,6 +15,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+	<h1>From content-page</h1>
 		<?php
 			the_content();
 
