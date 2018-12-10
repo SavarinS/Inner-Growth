@@ -1,19 +1,28 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:700');
+@import "home";
+@import "sidebar";
+@import 'theme_variables';
+
+
+
+body {
+    background-color: $white;
+}
 h1, h2, h3 {
     font-family: 'Noto Serif SC', serif;
+    font-size: 1.2rem
 }
 
-h3 {
-    font-size: 1.3rem;
-}
-
-h1 {
-    font-size: 2rem;
-}
 
 a{
     color: $black;
+
+}
+a:hover{
+    color: $green;
+    text-decoration: none; 
+
 }
 
 #index-wrapper {
@@ -22,69 +31,12 @@ a{
 
 }
 
-h1 {
-    font-size: 2rem;
-}
 
 
 
-// style sidebar left
-#left-sidebar{
-    //background-color: aquamarine;
-    width: 250px;
-}
 
-// style main content
-.entry-content{
-    //background-color: darkslategray;
-}
 
-// sidebar recently post
-#recent-posts-4, #custom_html-3{
-    padding: 20px;
 
-    h3 {
-        font-size: 1.3rem;
-    }
-}
 
-//introduction section
-.introduction{
-        margin-bottom: 10%;
 
-    img {
-        border-radius: 50%;
-        padding: 50px 0 50px 0;
-    }
-}
 
-.services{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    h2 {
-        background-color: $green;
-        color: $white;
-        margin-bottom: 50px;
-        padding: 30px;
-        
-    }
-}
-
-.private {
-    h1 {
-        // text-transform: uppercase;
-        // margin: 0;
-        // position: absolute;
-        // top: 25%;
-        // left: 50%;
-        // font-size: 3rem;
-        // transform: translate(-50%, -50%);
-        // color: $white;
-        margin: 0;
-        text-shadow: 2px 2px 6px #000;
-        text-align: center;
-    }
-}
