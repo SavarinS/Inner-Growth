@@ -1,0 +1,30 @@
+//Main navigation
+#main-menu{
+
+    a.nav-link{
+        color: $darkgray-header;
+        font-family: $font-header;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    
+    } 
+
+}
+
+.logo{
+    text-align: center;
+
+    .tagline{
+        p{
+            color: $darkgray-header;
+            font-family: 'Noto Serif SC', serif;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.bg-primary{
+    background-color: white;
+}
+

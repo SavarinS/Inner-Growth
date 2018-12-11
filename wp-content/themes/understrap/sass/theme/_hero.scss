@@ -1,0 +1,21 @@
+//Hero image
+
+.hero-image{
+    
+        text-align: center;
+        font-family: $font-header;
+        background-image: url('http://localhost/innergrowth-new.test/innergrowth/wp-content/themes/understrap/img/img1.jpg');
+        //background-position: center center;
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+
+        .text-main-image{
+            h1, h2{
+                color: white;
+            }
+        }
+    
+}

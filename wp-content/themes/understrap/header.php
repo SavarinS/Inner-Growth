@@ -56,8 +56,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 					<?php } else {
-						the_custom_logo();
+						//the_custom_logo();
 					} ?><!-- end custom logo -->
+
+					<!-- get tagline -->
+					<div class="logo">
+						<div>
+							<?php the_custom_logo(); ?>
+						</div>
+						<div class="tagline">
+							<p><?php bloginfo( 'description' ); ?></p>
+						</div>
+
+					</div>
+					
+					
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>

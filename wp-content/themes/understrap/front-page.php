@@ -20,13 +20,22 @@ get_header();
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<h1>index.php</h1>
+<!-- <h1>index.php</h1> -->
 
 <?php if ( is_front_page() && is_home() ) : ?>
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
 <div class="wrapper" id="index-wrapper">
+
+	<div class="hero-image">
+		<div class="text-main-image">
+			<h1>"The most profound changes start inside you"</h1>
+			<h2>For a more balance and fulfilling life</h2>
+
+		</div>
+
+	</div>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
@@ -64,7 +73,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
+			<?php //understrap_pagination(); ?>
 
 		<!-- Do the right sidebar check -->
 		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

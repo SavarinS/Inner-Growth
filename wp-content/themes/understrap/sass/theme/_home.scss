@@ -1,0 +1,126 @@
+// style main content
+#main {
+    padding: 2rem;  
+}
+
+//introduction section
+.introduction{
+    margin-bottom: 10%;
+
+    .main-feature-image {
+        img{
+            border-radius: 50%;
+            padding: 3rem 0 3rem 0
+        }
+    }
+
+    h1 {
+        //background-color: $green;
+        padding: 1rem;
+        color: $green;
+        text-transform: uppercase;
+    }
+    
+}
+hr {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 5px solid rgba(0,0,0,.1);
+}
+
+// Service - private and business section
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+h2 {
+    //background-color: $green;
+    color: $green;
+    margin-bottom: 3rem;
+    //padding: 2rem;
+    text-transform: uppercase;
+    
+}
+}
+
+// We offer you section
+
+//private block
+.private {
+
+    background-image: url('http://localhost/innergrowth-new.test/innergrowth/wp-content/themes/understrap/img/private.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+    .title-offer {
+        h1 {
+            padding: 2rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+
+            a{
+                color: $white;
+            }
+            
+        }
+    }
+    //description
+    .excerpt {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+//Business sector
+.business {
+    background-image: url('http://localhost/innergrowth-new.test/innergrowth/wp-content/themes/understrap/img/business.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .title-offer {
+        h1 {
+            padding: 2rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+
+            a{
+                color: $white;
+            }
+        }
+    }
+    //description
+    .excerpt {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+//We offer you section
+.offers{
+    
+    h2 {
+        //background-color: $green;
+        color: $green;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        
+        
+    }
+
+}
+
+.feature-image{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
