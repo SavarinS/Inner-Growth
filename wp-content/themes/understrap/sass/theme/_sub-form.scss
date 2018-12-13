@@ -1,0 +1,29 @@
+#wpforms-form-256{
+    
+    background-color: #eee;
+    padding: 20px 15px;
+    border: 3px solid #666;
+    border-radius: 20px;
+}
+//style form fields
+#wpforms-256-field_0-container, #wpforms-256-field_1-container{
+    display: flex;
+    text-align: center;
+
+    .wpforms-field-row {
+        max-width: 100%;
+    }
+}
+
+.wpforms-field-medium {
+    max-width: 100%;
+}
+
+.wpforms-submit-container{
+    display: flex;
+    justify-content: center;
+
+    .wpforms-submit {
+        background-color: $green;
+    }
+}
