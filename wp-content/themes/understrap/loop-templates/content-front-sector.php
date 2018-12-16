@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- Private and Business button section -->
 	<div class="row">
 		<!-- for private sector -->
-		<div class="col-sm-6">
+		<div class="col-lg">
     		<div class="private">
       			<div class="card-body">
 					
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div><!-- .private col-sm -->
 
 			<!-- for business sector -->
-		<div class="col-sm-6">
+		<div class="col-lg">
     		<div class="business">
       			<div class="card-body">
 					

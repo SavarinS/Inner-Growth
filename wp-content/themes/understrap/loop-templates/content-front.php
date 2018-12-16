@@ -15,44 +15,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="entry-header">
 
-		<?php //the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-		// '</a></h2>' ); ?>
-
-		<?php //if ( 'post' == get_post_type() ) : ?>
-
-			<div class="entry-meta">
-				<?php //understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-		<?php //endif; ?>
-
 	</header><!-- .entry-header -->
 
 	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
+	
 	<div class="entry-content">
 
 		<!-- Introduction section -->
+		<!-- <div class="container-fluid"> -->
 		<section class="introduction">
 			<?php
-
-				/*
-				* Get content introduction
-				*/
-				get_template_part( 'loop-templates/content-front', 'intro' );
+				//get_template_part( 'loop-templates/content-front', 'intro' );
 			?>
 		</section>
+
+		
 
 		<!-- Private and Business button section -->
 		<section class="services">
 			<h2 class="text-center">Do you want program as a personal or business purpose? </h2>
-				<?php
-
-					/*
-					* Get content private sector and business sector
-					*/
-					get_template_part( 'loop-templates/content-front', 'sector' );
-				?>
+				<?php get_template_part( 'loop-templates/content-front', 'sector' );?>
 		</section>
 
 		<hr>
@@ -60,31 +42,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- Offer section -->
 		<section class="offers">
 			<h2 class="text-center offer-title">We offer you</h2>
-			<?php
-
-					/*
-					* Get content offers
-					*/
-					get_template_part( 'loop-templates/content-front', 'offers' );
-				?>
-				
+			<?php get_template_part( 'loop-templates/content-front', 'offers' );?>
 		</section> <!--.offer -->
 
 		<!-- Begin Mailchimp Signup Form -->
-		<?php
-
-			/*
-			* Get content offers
-			*/
-			get_template_part( 'loop-templates/content-front', 'signup' );
-		?>
-
+		<section class="signup">
+			<?php get_template_part( 'loop-templates/content-front', 'signup' );?>
+		</section>
 		<hr>
 		<!--End mc_embed_signup-->
+
+		<!-- portfolio logo -->
+		<section class="portfolio">
+			<?php get_template_part( 'loop-templates/content-front', 'port' );?>
+		</section>
+		<!-- end portfolio logo -->
 
 		
 
 	</div><!-- .entry-content -->
+	
 
 	<footer class="entry-footer">
 

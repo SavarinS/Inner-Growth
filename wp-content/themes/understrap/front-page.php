@@ -28,6 +28,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="index-wrapper">
 
+
 	<div class="hero-image">
 		<div class="text-main-image">
 			<h1>"The most profound changes start inside you"</h1>
@@ -37,8 +38,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 	</div>
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
+	<div class="container-fluid">
+	<div class="<?php //echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<section class="introduction">
+			<?php
+				get_template_part( 'loop-templates/content-front', 'intro' );
+			?>
+		</section>
+	<section class="second-main">
 		<div class="row">
 
 			<!-- Do the left sidebar check and opens the primary div -->
@@ -80,9 +87,12 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		
 
 	</div><!-- .row -->
+	</section>
 
 </div><!-- Container end -->
 
-</div><!-- Wrapper end -->
+
+</div>
+</div><!-- </div> Wrapper end -->
 
 <?php get_footer(); ?>

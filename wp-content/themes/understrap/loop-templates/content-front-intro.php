@@ -12,19 +12,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <!-- get Welcome post -->
-<?php
-	$post_id = 138;
-	// $excerpt = the_excerpt();
-	$feature_image = get_the_post_thumbnail($post_id, 'medium');
-	$queried_post = get_post($post_id);
-	$title = $queried_post->post_title;
-?>
-					
-	<h1 class="text-center"><?php  echo $title;?></h1>
-	<div class="text-center main-feature-image">
-		<?php echo $feature_image; ?>
-	</div> 
-		<?php //echo $excerpt; ?>
-		<p><?php  echo $queried_post->post_content;?></p>
+
+
+<?php 
+	// The Query
+		$pages = new WP_Query([
+			'post_type' => 'page',
+			//'page_id'=> array ('142, 134, 161')
+			'p' => 134	
+		]);
+	
+	// The Loop
+	?>
+	<div class="row">
+	<?php  
+			
+			if ( $pages->have_posts() ) {
+				while ( $pages->have_posts() ) {
+					$pages->the_post(); ?>
+					<div class="col-4"><?php the_post_thumbnail('medium'); ?></div>
+  					<div class="col-8">
+					  <h1 class="text-center"><?php the_title(); ?></h1>
+					  <?php the_content(); ?>
+					</div>
+				<?php  
+				}
+				/* Restore original Post Data */
+				wp_reset_postdata();
+			} else {
+				// no posts found
+			}
+	?>
+	</div>
+	
+  	
 					
 	
