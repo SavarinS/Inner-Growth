@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$exceprt = get_the_excerpt($post_id);
 				?>
 				
-				<div class="feature-image">
+				<div class="feature-image img-thumbnail">
 					<?php //echo $feature_image; ?>
 				</div>
 				<div class="title-offer">
