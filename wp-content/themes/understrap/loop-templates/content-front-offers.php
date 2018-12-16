@@ -30,13 +30,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$pages->the_post(); ?>
 				<div class="card">
 				
-
-					<img class="card-img-top" src=<?php the_post_thumbnail(); ?>>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        			<?php the_post_thumbnail(); ?>
 					<div class="card-body">
-						<h5 class="card-title"><?php the_title(); ?></h5>
-						<h3><a href="<?php //echo $link; ?>"> <?php //echo $title; ?></a></h3>
-						<p class="card-text"><?php  //echo $excerpt;?></p>
-						<p class="card-text"><?php the_excerpt(); ?></p>
+						<h5 class="card-title"><?php the_title(); ?></h5></a>
+						<p class="card-text"><?php //the_excerpt(); ?></p>
 					</div>
 				</div>
 			<?php  
@@ -49,4 +47,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 	
 	</div>
+	<hr>
 

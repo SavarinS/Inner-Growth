@@ -20,7 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
       			<div class="card-body">
 					
 					<div class="title-offer">
-						<h1 class="text-center"><a href="<?php echo $link; ?>"> Private</a></h1>
+						<h1 class="text-center"><a href="<?php the_permalink( 128 ); ?>
+"> Private</a></h1>
 					</div>
 				</div>
 			</div>
@@ -32,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       			<div class="card-body">
 					
 					<div class="title-offer">
-						<h1 class="text-center"><a href="<?php echo $link; ?>"> Business</a></h1>
+						<h1 class="text-center"><a href="<?php the_permalink( 128 );?> "> Business</a></h1>
 					</div>
 				</div>
 			</div>
