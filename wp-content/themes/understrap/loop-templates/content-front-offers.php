@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$pages = new WP_Query([
 			'post_type' => 'page',
 			//'page_id'=> array ('142, 134, 161')
-			'post__in' => array(113, 107, 180)	
+			'post__in' => array(142, 134, 161)	
 		]);
 	
 	// The Loop
@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="card">
 				
 
-					<img class="card-img-top" src=<?php the_post_thumbnail(); ?>
+					<img class="card-img-top" src=<?php the_post_thumbnail(); ?>>
 					<div class="card-body">
 						<h5 class="card-title"><?php the_title(); ?></h5>
 						<h3><a href="<?php //echo $link; ?>"> <?php //echo $title; ?></a></h3>
@@ -50,5 +50,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 	
 	</div>
 
-		
-			
