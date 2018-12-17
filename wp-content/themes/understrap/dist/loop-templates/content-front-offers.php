@@ -9,81 +9,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
+<?php 
+	// The Query
+	
 
-<!-- Offer section -->
-	<div class="row">
-		<div class="col">
-			<!-- mindfulness -->
-				<?php
-					$post_id = 113;
-					$queried_post = get_post($post_id);
-					$title = $queried_post->post_title;
-					$link = get_permalink($post_id);
-					$feature_image = get_the_post_thumbnail($post_id, 'medium');
-					$excerpt = get_the_excerpt($post_id);
-				?>
-				
-				<div class="feature-image">
-					<?php echo $feature_image; ?>
-				</div>
+		$pages = new WP_Query([
+			'post_type' => 'page',
+			//'page_id'=> array ('142, 134, 161')
+			'post__in' => array(142, 134, 161)	
+		]);
+	
+	// The Loop
+	?>
+	<div class="card-deck">
 
-				<div class="title-offer text-center">
-					<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
-				</div>
-
-				<div class="content-offer">
-					<p class="text-center"><?php  echo $excerpt;?></p>
-				</div>
-						
-					
-		</div><!-- .col -->
-
-		<div class="col"><!-- Zen coaching -->
-						
-			<?php
-				$post_id = 107;
-				$queried_post = get_post($post_id);
-				$title = $queried_post->post_title;
-				$link = get_permalink($post_id);
-				$feature_image = get_the_post_thumbnail($post_id, 'medium');
-				$excerpt = get_the_excerpt($post_id);
-			?>
-
-			<div class="feature-image">
-				<?php echo $feature_image; ?>
-			</div> 
-			<div class="title-offer text-center">
-				<h3><a href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
-			</div>
-			<div class="content-offer">
-				<p class="text-center"><?php  echo $excerpt;?></p>
-			</div>
-						
-					
-		</div><!-- .col -->
-
-		<div class="col"><!-- workshops -->
-					
-			<?php
-				$post_id = 180;
-				$queried_post = get_post($post_id);
-				$title = $queried_post->post_title;
-				$link = get_permalink($post_id);
-				$feature_image = get_the_post_thumbnail($post_id, 'medium');
-				$excerpt = get_the_excerpt($post_id);
-			?>
-
-			<div class="feature-image">
-				<?php echo $feature_image; ?>
-			</div>
-			<div class="title-offer text-center">
-				<h3><a class="text-center" href="<?php echo $link; ?>"> <?php echo $title; ?></a></h3>
-			</div>
-			<div class="content-offer">
-				<p class="text-center"><?php  echo $excerpt;?></p>
-			</div>
-							
-		</div><!-- .col -->
-</div><!-- .row -->
-		
+	<?php  
 			
+		if ( $pages->have_posts() ) {
+			while ( $pages->have_posts() ) {
+				$pages->the_post(); ?>
+				<div class="card">
+				
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+        			<?php the_post_thumbnail(); ?>
+					<div class="card-body">
+						<h5 class="card-title"><?php the_title(); ?></h5></a>
+						<p class="card-text"><?php //the_excerpt(); ?></p>
+					</div>
+				</div>
+			<?php  
+			}
+			/* Restore original Post Data */
+			wp_reset_postdata();
+		} else {
+			// no posts found
+		}
+?>
+	
+	</div>
+	
+
