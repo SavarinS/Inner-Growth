@@ -14,6 +14,11 @@ body {
     background-color: $white;
     color: $darkgray-header;
 }
+
+.wrapper{
+    padding: 0;
+}
+
 h1 {
     font-family: $font-header;
     font-size: 1.5rem;
@@ -50,15 +55,10 @@ a:hover{
 
 }
 
-#index-wrapper {
-
-    //padding: 30px;
-
-}
-
 //Main content
 #content{
-    margin-top: 4rem;
+    margin-top: 5rem;
+    padding: 0 3rem;
 }
 
 // Main footer

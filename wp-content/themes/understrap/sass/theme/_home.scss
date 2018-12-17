@@ -5,7 +5,7 @@
 
 //introduction section
 .introduction{
-    //margin-bottom: 10%;
+    margin-bottom: 2rem;
 
     .main-feature-image {
         img{
@@ -35,15 +35,15 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: #f2f2f2;
+    padding: 2rem;
     
-h2 {
-    //background-color: $green;
-    color: $green;
-    margin-bottom: 3rem;
-    //padding: 2rem;
-    text-transform: uppercase;
-    
-}
+    h2 {
+        padding: 1rem;
+        background-color: $green;
+        color: $white;
+        
+    }
 }
 
 // We offer you section
@@ -109,21 +109,40 @@ h2 {
 
 //We offer you section
 .offers{
-    
-    h2 {
-        //background-color: $green;
-        color: $green;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding: 1rem;
-        text-transform: uppercase;
-        
-        
-    }
+    background-color: #f2f2f2;
+    padding: 2rem;
+        h2 {
+            //background-color: $green;
+            color: $white;
+            //margin-top: 2rem;
+            //margin-bottom: 2rem;
+            //padding: 1rem;
+            text-transform: uppercase;
+            
+            
+        }
 
 }
 
 .feature-image{
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.card{
+    margin-bottom: 3rem;
+    border: 1px solid #f2f2f2;
+
+    .card-header{
+        background-color: $green;
+        color: $white;
+        padding:1.2rem;
+
+        
+    }
+
+    .card-body{
+        background-color: $lightgray;
+        padding:2rem;
+    }
 }

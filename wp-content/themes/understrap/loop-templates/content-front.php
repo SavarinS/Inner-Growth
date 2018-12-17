@@ -17,39 +17,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</header><!-- .entry-header -->
 
-	<?php //echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 	
 	<div class="entry-content">
 
-		<!-- Introduction section -->
-		<!-- <div class="container-fluid"> -->
-		<section class="introduction">
-			<?php
-				//get_template_part( 'loop-templates/content-front', 'intro' );
-			?>
-		</section>
 
 		
 
 		<!-- Private and Business button section -->
-		<section class="services">
-			<h2 class="text-center">Do you want program as a personal or business purpose? </h2>
-				<?php get_template_part( 'loop-templates/content-front', 'sector' );?>
-		</section>
-
-		<hr>
+		<div class="card">
+			<div class="card-header service">
+			
+				<h2 class="text-center">Do you want program as a personal or business purpose? </h2>
+			</div>
+			<div class="card-body">
+					<?php get_template_part( 'loop-templates/content-front', 'sector' );?>
+			</div>
+			
+		</div>
 
 		<!-- Offer section -->
-		<section class="offers">
-			<h2 class="text-center offer-title">We offer you</h2>
-			<?php get_template_part( 'loop-templates/content-front', 'offers' );?>
-		</section> <!--.offer -->
+		<div class="card">
+			<div class="card-header offers">
+				<h2 class="text-center offer-title">We offer you</h2>
+			</div>
+			<div class="card-body">
+				<?php get_template_part( 'loop-templates/content-front', 'offers' );?>
+			</div> <!--.offer -->
+		</div>
 
 		<!-- Begin Mailchimp Signup Form -->
-		<section class="signup">
-			<?php get_template_part( 'loop-templates/content-front', 'signup' );?>
-		</section>
-		<hr>
+		<div class="card">
+  			<div class="card-body signup">
+				<?php get_template_part( 'loop-templates/content-front', 'signup' );?>
+  			</div>
+		</div>
+		<!-- <hr> -->
 		<!--End mc_embed_signup-->
 
 		<!-- portfolio logo -->

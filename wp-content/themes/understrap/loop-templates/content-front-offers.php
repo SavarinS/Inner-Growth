@@ -47,5 +47,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 	
 	</div>
-	<hr>
+	
 
