@@ -14,13 +14,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper" id="single-wrapper">
-
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+<h1>single.php</h1>
+<div class="container-fluid">
+	<div class="<?php //echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<?php //get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -28,7 +29,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
-						<?php understrap_post_nav(); ?>
+						<?php //understrap_post_nav(); ?>
 
 					<?php
 					// If comments are open or we have at least one comment, load up the comment template.
@@ -47,6 +48,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	</div><!-- .row -->
 
 </div><!-- Container end -->
+</div>
 
 </div><!-- Wrapper end -->
 

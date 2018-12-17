@@ -23,11 +23,16 @@ $container   = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="page-wrapper">
 	<div class="container-fluid">
 		<div class="<?php //echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
+<h1>page.php</h1>
 			<div class="row">
 
 				<!-- Do the left sidebar check -->
-				<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+
+	<?php //if ( is_home() || is_page( array( 'About us', 'Contact us', 'Individual Zen Coaching', 'Workshops', 'About the founder', 'Inner Growth in media','Business References', 'Zen coaching testimonials', 'Mindfulness testimonials', 'Corporate Social Responsibility', 'From Inner Growth to business growth', 'Our mindfulness offer' ))  ) : ?>
+	<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+	<?php //endif; ?>	
+	
+	
 
 				<main class="site-main" id="main">
 

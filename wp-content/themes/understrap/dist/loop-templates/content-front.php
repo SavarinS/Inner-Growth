@@ -29,9 +29,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			
 				<h2 class="text-center">Do you want program as a personal or business purpose? </h2>
 			</div>
-			<div class="card-body">
-					<?php get_template_part( 'loop-templates/content-front', 'sector' );?>
-			</div>
+				<div class="card-body">
+						<?php get_template_part( 'loop-templates/content-front', 'sector' );?>
+				</div>
 			
 		</div>
 
