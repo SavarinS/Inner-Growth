@@ -16,23 +16,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<header class="entry-header">
 
 	</header><!-- .entry-header -->
-
-	
 	<div class="entry-content">
-
-
-		
 
 		<!-- Private and Business button section -->
 		<div class="card">
 			<div class="card-header service">
 			
-				<h2 class="text-center">Do you want program as a personal or business purpose? </h2>
+				<h2 class="text-center">Intreested any program? </h2>
 			</div>
 				<div class="card-body">
 						<?php get_template_part( 'loop-templates/content-front', 'sector' );?>
-				</div>
-			
+				</div>	
 		</div>
 
 		<!-- Offer section -->

@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-<h2>content-page.php</h2>
+<!-- <h2>content-page.php</h2> -->
 
 	<header class="entry-header">
 
