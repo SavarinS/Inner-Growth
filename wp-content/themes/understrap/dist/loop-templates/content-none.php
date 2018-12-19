@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</header><!-- .page-header -->
 
 	<div class="page-content">
-
+<h1>from content-none.php</h1>
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 

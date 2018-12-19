@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</header><!-- .entry-header -->
 	<div class="entry-content">
-
+		
 		<!-- Private and Business button section -->
 		<div class="card">
 			<div class="card-header service">

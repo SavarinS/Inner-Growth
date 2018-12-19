@@ -15,8 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		$pages = new WP_Query([
 			'post_type' => 'page',
-			//'page_id'=> array ('142, 134, 161')
-			'post__in' => array(142, 134, 161)	
+			//'page_id'=> array (107, 180, 113)
+			'post__in' => array(107, 180, 113)	
 		]);
 	
 	// The Loop

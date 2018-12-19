@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php 
 	// The Query
 		$pages = new WP_Query([
-			//'post_type' => 'page',
+			'post_type' => 'page',
 			//'page_id'=> array ('142, 134, 161')
 			'p' => 88	
 		]);
